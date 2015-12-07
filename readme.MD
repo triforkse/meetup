@@ -1,4 +1,4 @@
-# Trifork - GOTO; Night
+# Trifork - [GOTO; Night](http://www.meetup.com/GOTO-Night-Stockholm/)
 
 This repository contains applications we will be using for different meetups.
 
