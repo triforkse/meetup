@@ -37,8 +37,6 @@ WORKDIR /app
 
 RUN npm install
 
-EXPOSE 3000
-
 CMD ["npm", "start"]
 ```
 
@@ -58,8 +56,6 @@ ADD . /app
 WORKDIR /app
 
 RUN npm run build
-
-EXPOSE 3000
 
 CMD ["npm", "start"]
 ```
