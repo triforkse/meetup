@@ -33,11 +33,11 @@ ADD ./src /www
 # to build our image
 docker build -t app0 .
 
-# to run our image
+# to start a container from our image
 docker run -d -p 3000:80 app0
 ```
 
-On Linux, visit localhost:3000 in your browser. Mac/Windows visit the IP seen when running `docker-machine ip default`
+On Linux, visit localhost:3000 in your browser. Mac/Windows visit the IP:3000 seen when running `docker-machine ip default`
 
 ## app1
 
@@ -77,13 +77,13 @@ CMD ["npm", "start"]
 ### Commands
 
 ```
-# run a mongodb named db
+# run a mongodb container named db
 docker run --name db -d mongo
 
-# build app2
+# build the app2 image
 docker build -t app2 .
 
-# run app2 with a link to db
+# run a container based on app2 with a link to db
 docker run -p 3001:3000 --link db -d app2
 ```
 
@@ -104,10 +104,12 @@ db:
   container_name: db
 ```
 
+Read more about Docker Compose https://docs.docker.com/compose/
+
 ### Commands
 
 ```
-# to build (or start from cache)
+# to build (or start from cache) and run our machines
 docker-machine up -d
 
 # to build without cache
