@@ -1,5 +1,9 @@
 # cheat-sheet
 
+```
+git clone https://github.com/triforkse/meetup.git && cd meetup
+```
+
 ## app0
 
 ### Dockerfile
